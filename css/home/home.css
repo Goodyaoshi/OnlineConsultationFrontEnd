@@ -1,0 +1,82 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+#home {
+    overflow: auto;
+}
+
+@media only screen and (min-width: 1500px) {
+    .home-panel {
+        margin-top: 20px;
+        display: flex;
+    }
+    .card-panel {
+        width: 22.5%;
+        margin: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .home-panel {
+        margin-top: 20px;
+    }
+    .card-panel {
+        margin: 10px;
+        width: 48%;
+        display: inline-block;
+    }
+}
+
+.card-panel {
+    flex: 1;
+    display: inline-block;
+    height: 150px;
+    box-shadow: 0px 5px 25px 2px rgba(0, 0, 0, .15);
+    border-radius: 10px;
+}
+
+.card-panel-description {
+    color: #fff;
+    float: right;
+    font-weight: 700;
+    padding: 40px;
+    font-size: 15px;
+}
+
+.card-panel-description label {
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+.statistic-box {
+    padding: 0 20px;
+}
+
+.statistic-one {
+    margin: 20px 0;
+    display: inline-block;
+    height: 400px;
+    box-shadow: 0px 5px 25px 2px rgba(0, 0, 0, .15);
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+    padding: 5px;
+}
+
+.statistic-two {
+    margin: 20px 0;
+    display: inline-block;
+    height: 400px;
+    box-shadow: 0px 5px 25px 2px rgba(0, 0, 0, .15);
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+    padding: 5px;
+}

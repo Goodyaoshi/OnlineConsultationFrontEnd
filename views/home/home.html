@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/home/home.css">
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <div id="home" class="lz-main">
+        <div class="home-panel">
+            <div class=" card-panel" style="background-color: #bb1542">
+                <div class="card-panel-description">今日有效挂号（人次）
+                    <label>5</label>
+                </div>
+            </div>
+            <div class=" card-panel" style="background-color: #eb5f5d">
+                <div class="card-panel-description">今日接诊（人次）
+                    <label>10</label>
+                </div>
+            </div>
+            <div class=" card-panel" style="background-color: #fabc74">
+                <div class="card-panel-description">今日零售（元）
+                    <label>1000</label>
+                </div>
+            </div>
+            <div class=" card-panel" style="background-color: #239f95">
+                <div class="card-panel-description">今日营业（元）
+                    <label>2000</label>
+                </div>
+            </div>
+        </div>
+        <div class="statistic-box">
+            <div class="statistic-one">
+
+            </div>
+            <div class="statistic-two">
+
+            </div>
+        </div>
+    </div>
+    <script src="../../js/common/jquery/jquery-2.2.4.js"></script>
+    <script src="home.js"></script>
+    <script src="../../js/common/highcharts/highcharts.js"></script>
+    <script>
+        $(function() {
+            getOne();
+            getTwo();
+        })
+
+        function getOne() {
+            var json = getJsonOne();
+            $('.statistic-one').highcharts(json);
+        }
+
+        function getTwo() {
+            let json = getJsonTwo();
+            $('.statistic-two').highcharts(json);
+        }
+    </script>
+</body>
+
+</html>

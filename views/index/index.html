@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问诊系统</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/index/index.css">
+    <link rel="stylesheet" type="text/css" href="../../plugin/navTab/css/navTab.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<style>
+
+</style>
+
+<body>
+    <div id="index">
+        <div class="menu">
+            <div class="logo">LOGO</div>
+            <div class="menu-list">
+                <ul>
+                    <div class="menu-list-content">
+                        <li onclick="toUrl(1)"><i class="fa fa-hospital-o"></i>
+                            <h4>预约管理</h4>
+                        </li>
+                        <li onclick="toUrl(2)"><i class="fa fa-file-text-o"></i>
+                            <h4>挂号</h4>
+                        </li>
+                        <li onclick="toUrl(3)"><i class="	fa fa-stethoscope"></i>
+                            <h4>就诊</h4>
+                        </li>
+                        <li onclick="toUrl(4)"><i class="fa fa-shopping-bag"></i>
+                            <h4>药物零售</h4>
+                        </li>
+                        <li onclick="toUrl(5)"><i class="fa fa-bar-chart"></i>
+                            <h4>报表管理</h4>
+                        </li>
+                        <li onclick="toUrl(7)"><i class="fa fa-rmb"></i>
+                            <h4>收费发药</h4>
+                        </li>
+                        <li onclick="toUrl(8)"><i class="fa fa-medkit"></i>
+                            <h4>药品管理</h4>
+                        </li>
+                        <li onclick="toUrl(6)"><i class="fa fa-gear"></i>
+                            <h4>设置</h4>
+                        </li>
+                        <li onclick="toUrl(9)"><i class="fa fa-files-o"></i>
+                            <h4>档案表</h4>
+                        </li>
+                        <li onclick="toUrl(10)"><i class="fa fa-user-circle-o"></i>
+                            <h4>智能客服</h4>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="head">
+                <div class="name">网站名称</div>
+                <div class="setting">
+                    <span onclick="toLogin()">登录</span>
+                    <span onclick="toRegister()">注册</span>
+                </div>
+            </div>
+            <div class="browsing-history">
+                <div class="tag-history is-select" onclick="toUrl(0)"><a><span>首页</span></a></div>
+            </div>
+            <div class="main-content">
+                <iframe src="../home/home.html"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/common/jquery/jquery-2.2.4.js "></script>
+    <script src="index.js"></script>
+    <script src="../../plugin/navTab/js/navTab.js "></script>
+    <script>
+        // 视图模型
+        // 视图层和数据层代码最好分开，便于维护，利用数据模型驱动视图模型
+        // 不要每个函数写一大段，功能单元化，利用面向对象的思想写 function(){}
+        $(function() {
+            $('.menu-list-content').navTab({
+                showDom: '.browsing-history',
+                data: urlData
+            });
+        })
+
+        function toUrl(id) {
+            var str = '<iframe src=" ' + url[id] + ' "></iframe>'
+            $(".main-content ").empty();
+            $(".main-content ").append(str);
+        }
+
+        function tabToUrl(url) {
+            var str = '<iframe src=" ' + url + ' "></iframe>'
+            $(".main-content ").empty();
+            $(".main-content ").append(str);
+        }
+
+        function toLogin() {
+            location.href = '../login/login.html';
+        }
+
+        function toRegister() {
+            location.href = '../register/register.html';
+        }
+    </script>
+</body>
+
+</html>

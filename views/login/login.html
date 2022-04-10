@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/login/login.css">
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="login-main">
+        <div class="login-box">
+            <div class="login-img"></div>
+            <div class="login-form">
+                <h1>Hello，请登录</h1>
+                <form class="lz-form">
+                    <div class="lz-form-row">
+                        <div class="lz-col-1 lz-form-item">
+                            <label class="lz-form-item-label ">账号</label>
+                            <input class="lz-form-item-input " type="text" autocomplete="off">
+                            <span class="lz-form-item-help"></span>
+                        </div>
+                    </div>
+                    <div class="lz-form-row">
+                        <div class="lz-col-1 lz-form-item">
+                            <label class="lz-form-item-label">密码</label>
+                            <input class="lz-form-item-input " type="password" autocomplete="off">
+                            <span class="lz-form-item-help"></span>
+                        </div>
+                    </div>
+                    <div class="lz-form-row login-btn">
+                        <button type="button" class="lz-btn lz-btn-primary" onclick="toIndex()">登录</button>
+                    </div>
+                    <div class="register"><a onclick="toRegister()">注册新用户</a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toRegister() {
+            location.href = '../register/register.html'
+        }
+
+        function toIndex() {
+            location.href = '../index/index.html'
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>聊天室</title>
+        <link type="text/css" href="../../css/chat/chat.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="chatbox" class="lite-chatbox">
+            <!--聊天框内容-->
+        </div>
+        <div class="chat-submit">
+            <p id='chatHint' class="chat-hint"><span class="chat-hint-icon">!</span><span class="chat-hint-text">发送内容不能为空</span></p>
+            <textarea id="chat_input" class="chat-input-text" autofocus placeholder="请输入您想对我说的话，按Enter键发送（shift+Enter换行）。"></textarea>
+            <div class="chat-input-tools">
+                <button id="chat_input_button" class="chat-input-button">发送</button>
+            </div>
+        </div>
+        <script src="./chat.js"></script>
+    </body>
+</html>

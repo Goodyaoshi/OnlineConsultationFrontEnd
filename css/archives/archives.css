@@ -1,0 +1,133 @@
+#archives {
+    padding: 10px;
+    font-size: 13px;
+    min-height: 800px;
+}
+
+.archives-btn {
+    float: right;
+}
+
+.archives-btn button {
+    padding: 7px 13px;
+}
+
+.archices-main {
+    /* border: 1px solid #ccc; */
+    display: flex;
+    height: calc(100% - 60px);
+}
+
+.archices-main table {
+    border-collapse: collapse;
+    width: 100%;
+    border-right: 1px solid #ccc;
+}
+
+.archices-main table td {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 2px 5px;
+    text-align: center;
+}
+
+.am-left {
+    flex: 1.5;
+    /* border-right: 1px solid #ccc; */
+}
+
+.aml-check-content {
+    padding: 20px 10px;
+}
+
+.amlcc-p {
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.am-p {
+    display: inline-block;
+}
+
+.am-p input {
+    width: 16px;
+    height: 16px;
+    margin-top: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+.am-p input:hover {
+    border-color: #2e69eb;
+}
+
+.am-p input:checked {
+    color: #fff;
+    background-color: #2e69eb;
+    border: 1px solid #2e69eb;
+}
+
+.am-p input:after {
+    content: "✔";
+}
+
+.aml-checkbox {
+    height: 15px;
+    vertical-align: bottom;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+.aml-checkbox :checked {
+    color: #000;
+}
+
+.amlccp-head {
+    margin-bottom: 20px;
+    color: #2e69eb;
+}
+
+.aml-res {
+    border-bottom: 1px solid #ccc;
+}
+
+.am-right {
+    padding-left: 10px;
+    flex: 2;
+}
+
+.amrcc-p {}
+
+.amt-head {
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    line-height: 35px;
+    border-left: 1px solid #ccc;
+}
+
+.am-check-box {
+    border-left: 1px solid #ccc;
+    width: 100%;
+}
+
+.amcb-head {
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    text-indent: 10px;
+}
+
+.amcb-check {
+    display: flex;
+}

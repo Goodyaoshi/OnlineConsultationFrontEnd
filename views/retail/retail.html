@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>药物零售</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/retail/retail.css">
+    <link rel="stylesheet" type="text/css" href="../../plugin/switchTab/css/responsive.tabs.css">
+</head>
+<style>
+
+</style>
+
+<body>
+    <div id="retail" class="lz-main">
+        <div class="retail-left">
+            <div id="yao-tab">
+                <ul class="tabs-list ts-list">
+                    <li class="active"><a>西成药</a></li>
+                    <li><a>中药</a></li>
+                </ul>
+                <div class="ts-container">
+                    <div class="ts-content arrange-content">
+                        <div class="retail-table">
+                            <h1>西成药表格</h1>
+                        </div>
+                    </div>
+                    <div class="ts-content arrange-content" style="display: none">
+                        <div class="retail-table">
+                            <h1>中药表格</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="retail-total">
+                <div class="lz-total">合计<span>0元</span></div>
+                <div class="lz-total-btn">
+                    <button type="button" class="lz-btn lz-btn-default">保存</button>
+                    <button type="button" class="lz-btn lz-btn-default">收费</button>
+                </div>
+            </div>
+        </div>
+        <div class="retail-right">
+            <div class="re-content">
+                <div class="lz-form-head">常售药品</div>
+                <div class="re-detail lz-center-vertically">
+                    <div class="lz-no-mess">暂无数据</div>
+                </div>
+            </div>
+            <div class="re-content">
+                <div class="lz-form-head">今日排行榜</div>
+                <div class="re-detail lz-center-vertically">
+                    <div class="lz-no-mess">暂无数据</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/common/jquery/jquery-2.2.4.js "></script>
+    <script src="../../plugin/switchTab/js/re-tabs-simplify.js"></script>
+    <script>
+        $(function() {
+            $('#yao-tab').resTabsSimp();
+        })
+    </script>
+</body>
+
+</html>
